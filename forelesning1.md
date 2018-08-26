@@ -7,3 +7,4 @@ Målet for denne laben er å få installert nødvendig programvare for videre op
 * https://store.docker.com/editions/community/
 * Laste ned- og installere Docker(https://docs.docker.com/get-started/). Du skal kunne kjøre ```docker run hello-world``` på lokal datamaskin
 * Verifisere at alle har et utviklingsmiljø og kan skrive automatiserte tester som kan kjøres med Gradle eller Maven
+* Hvis tid; snikstart på neste ukes tema 
