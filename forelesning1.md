@@ -3,8 +3,7 @@ Målet for denne laben er å få installert nødvendig programvare for videre op
 
 ## Oppgaver
 
-* Lag konto på [github.com](https://github.com) - pass på å ha Git på kommandolinje 
-* https://store.docker.com/editions/community/
-* Laste ned- og installere Docker(https://docs.docker.com/get-started/). Du skal kunne kjøre ```docker run hello-world``` på lokal datamaskin
-* Verifisere at alle har et utviklingsmiljø og kan skrive automatiserte tester som kan kjøres med Gradle eller Maven
+* Lag konto på [github.com](https://github.com) - pass på å ha Git på kommandolinje * 
+* Laste ned- og installere Docker(https://docs.docker.com/get-started/). Du skal kunne kjøre ```docker run hello-world``` på lokal datamaskin. Bruke Docker CE.
+* Alle skal ha utviklingsmiljø som kan kjøre automatiserte tester, og som kan fungere i en DevOps pipeline
 * Hvis tid; snikstart på neste ukes tema  https://concoursetutorial.com/
