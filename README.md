@@ -9,6 +9,7 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 ## Forelesning #2
 
 * [The three ways, arbeidsmetoder som understøtter DevOps](http://itrevolution.com/the-three-ways-principles-underpinning-devops/) 
+* [Morsom post om "Sigle-piece-flow" vs Stor batch](https://medium.com/@stefanluyten/single-piece-flow-5d2c2bec845b#.9o7sn74ns)
 * [10 Depploys a day at Flickr](https://www.youtube.com/watch?v=LdOe18KhtT4)
 * Boktips #1 - [The goal](https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951)
 * Boktips #2 - [The Phoenix project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO)
