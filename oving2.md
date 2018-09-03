@@ -46,4 +46,11 @@ Prøv å skrive en eller flere tester slik at de feiler, og se hva som skjer i T
 
 ## Oppgave 3. Concourse Pipeline 
 
+Oppgaven er å få det lokale Concourse miljøet som kjører i Docker, til å bygge prosjektet 
 
+Dere kan sjekke ut mitt repo som et startpunkt ; https://github.com/glennbech/pgr301-helloworld
+
+Man legger til en ny pipeline på denne måten 
+```
+fly -t pgr301  set-pipeline -c pipeline.yml -p hello-world
+```
