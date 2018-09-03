@@ -28,11 +28,13 @@ følgende XML blokk må da legges til i pom.xml etterpå
     </properties>
 ```
 
+
+
+## Oppgave 2. Software as a Service (SAAS) Travis CI
+
 Demo; 
 
 https://travis-ci.org/glennbech/pgr301-helloworld
-
-## Oppgave 2. Software as a Service (SAAS) Travis CI
 
 Travis er en enkel CI/CD tjeneste som kan gjøre kontinuerlig integrasjon. Tjenesten er gratis 
 for offentlige repo. Travis integrerer med GitHub. Du kan logge på - og registrere deg med GitHub. Når du har logget deg på kan du aktivere travis bygg for 
