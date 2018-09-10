@@ -5,7 +5,6 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * [Forelesning 1](forelesning1.md)
 
 
-
 ## Forelesning #2
 
 * [The three ways, arbeidsmetoder som understøtter DevOps](http://itrevolution.com/the-three-ways-principles-underpinning-devops/) 
@@ -17,3 +16,9 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * [Øvingsoppgave forelesning #2](oving2.md)
 
 
+## Forelesning #3
+
+* [Øvingsoppgave](oving3.md)
+* [Concourse tutorial](https://concoursetutorial.com/)
+* [Concourse intro på slideshare](https://www.slideshare.net/gwennetourneau/concourseci-overview)
+* [Docker intro på slideshare](https://www.slideshare.net/Docker/introduction-to-docker-2017)
