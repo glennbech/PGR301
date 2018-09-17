@@ -9,7 +9,7 @@ Vi skal også øve på å lage Pull-requester mot repositories vi ikke har skriv
 * https://help.github.com/articles/creating-a-pull-request-from-a-fork/
 * https://help.github.com/articles/fork-a-repo/
 
-# Installer terraform
+# Administrere GitHub ved hjelp av Terraform
 
 [Terraform installeres på lokal maskin](https://www.terraform.io/intro/getting-started/install.html)
 
