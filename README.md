@@ -22,3 +22,10 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * [Concourse tutorial](https://concoursetutorial.com/)
 * [Concourse intro på slideshare](https://www.slideshare.net/gwennetourneau/concourseci-overview)
 * [Docker intro på slideshare](https://www.slideshare.net/Docker/introduction-to-docker-2017)
+
+## Forelesning #4
+
+* [Øvingsoppgave](oving4.md)
+* https://speakerdeck.com/mlfowler/the-disposable-infrastructure
+* https://www.slideshare.net/leetrout/terraform-an-overview-introduction
+
