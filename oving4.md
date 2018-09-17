@@ -1,7 +1,7 @@
 I denne øvingen skal dere lage en ny GitHub Organization, repository og team med medlemmer. Dette skal gjøres via Terraform. 
 Vi skal også øve på å lage Pull-requester mot repositories vi ikke har skrive-tilgang på. 
 
-# Lag en Fork 
+# Lage pull request fra fork 
 [https://github.com/glennbech/pgr301-infra-as-code](https://github.com/glennbech/pgr301-infra-as-code)
 
 * Endre filen https://github.com/glennbech/pgr301-infra-as-code/blob/master/github_team.tf, og legg til din egen bruker i teamet. 
@@ -13,17 +13,17 @@ Vi skal også øve på å lage Pull-requester mot repositories vi ikke har skriv
 
 [Terraform installeres på lokal maskin](https://www.terraform.io/intro/getting-started/install.html)
 
-# Lag et Personal Access token for GitHub
+## Lag et Personal Access token for GitHub
 
 * [https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
 
 Ta godt vare på dette, det er like "viktig"/"Sensitivt" som både brukernavn og passord sammen. 
 
-# Lag en GitHub Organizaion 
+## Lag en GitHub Organizaion 
 
 Sjekk ut https://help.github.com/articles/creating-a-new-organization-from-scratch/
 
-# Verifiser terraform + github token 
+## Verifiser terraform + github token 
 
 Klone [dette repositoriet for inspirasjon](https://github.com/glennbech/pgr301-infra-as-code) som inspirasjon.
 
