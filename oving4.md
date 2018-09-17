@@ -29,7 +29,7 @@ Klone [dette repositoriet for inspirasjon](https://github.com/glennbech/pgr301-i
 
 Leg et nytt *public* repository for videre arbeid. Kopier gjerne filene fra pgr301-infra-as-code som et startpunkt
 
-Dere må modifidsere filen https://github.com/glennbech/pgr301-infra-as-code/blob/master/provider.tf og bruke eget organizaionnavn (laget i forrige steg). 
+Dere må modifidsere filen https://github.com/glennbech/pgr301-infra-as-code/blob/master/provider.tf og bruke eget organizationnavn (laget i forrige steg). 
 
 Dere må også sørge for at environment variabel GITHUB_TOKEN er satt når dere jobber med terraform.
 
