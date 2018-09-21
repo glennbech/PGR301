@@ -45,15 +45,4 @@ For å utføre endringene kjører dere
 ```
 terraform apply
 ```
-# Concourse Pipeline for Terraform 
-
-I denne oppgaven er målet å få Concourse til å kjøre en pipeline, slik at din organisasjon automatisk blir endret dersom du endrer på kildekoden i ditt eget repository. 
-
-Ta utgangspunkt i filene under /concourse i https://github.com/glennbech/pgr301-infra-as-code
-
-# For å legge til Pipeline blir kommandoen 
-
-```
-fly -t <din target som laget ved login> sp -c concourse/pipeline.yml -p infra-as-code-github -v github_token=<github_token>
-```
 
