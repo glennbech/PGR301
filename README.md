@@ -22,3 +22,10 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * [Concourse tutorial](https://concoursetutorial.com/)
 * [Concourse intro på slideshare](https://www.slideshare.net/gwennetourneau/concourseci-overview)
 * [Docker intro på slideshare](https://www.slideshare.net/Docker/introduction-to-docker-2017)
+
+
+# Forelesning #5
+* Lenke til concourse patterns 
+* Terraform AWS bok 
+* 
+
