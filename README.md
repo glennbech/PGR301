@@ -25,7 +25,8 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 
 
 # Forelesning #5
+
 * Lenke til concourse patterns 
 * Terraform AWS bok 
-* 
+*  
 
