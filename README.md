@@ -32,5 +32,5 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 ## Forelesning #5
 
 * [The Twelve Factor App](https://12factor.net/)
-* [Øvingsoppgave](Oving5.md)
+* [Øvingsoppgave](oving5.md)
 
