@@ -29,3 +29,8 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * https://speakerdeck.com/mlfowler/the-disposable-infrastructure
 * https://www.slideshare.net/leetrout/terraform-an-overview-introduction
 
+## Forelesning #5
+
+* [The Twelve Factor App](https://12factor.net/)
+* [Øvingsoppgave](Oving5.md)
+
