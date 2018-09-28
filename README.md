@@ -7,7 +7,7 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 
 ## Forelesning #2
 
-* [The three ways, arbeidsmetoder som understøtter DevOps](http://itrevolution.com/the-three-ways-principles-underpinning-devops/) 
+* [The three ways, arbeidsmetoder som understøtter DevOps](http://itrevolution.com/the-three-ways-principles-underpinning-devops/)
 * [Morsom post om "Sigle-piece-flow" vs Stor batch](https://medium.com/@stefanluyten/single-piece-flow-5d2c2bec845b#.9o7sn74ns)
 * [10 Depploys a day at Flickr](https://www.youtube.com/watch?v=LdOe18KhtT4)
 * Boktips #1 - [The goal](https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951)
@@ -23,10 +23,15 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * [Concourse intro på slideshare](https://www.slideshare.net/gwennetourneau/concourseci-overview)
 * [Docker intro på slideshare](https://www.slideshare.net/Docker/introduction-to-docker-2017)
 
+## Forelesning #4
 
-# Forelesning #5
+* [Øvingsoppgave](oving4.md)
+* https://speakerdeck.com/mlfowler/the-disposable-infrastructure
+* https://www.slideshare.net/leetrout/terraform-an-overview-introduction
 
-* Lenke til concourse patterns 
-* Terraform AWS bok 
-*  
+## Forelesning #5
 
+* [The Twelve Factor App](https://12factor.net/)
+* [Øvingsoppgave](oving5.md)
+
+## Frelesing #6
