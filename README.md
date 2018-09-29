@@ -35,3 +35,7 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * [Øvingsoppgave](oving5.md)
 
 ## Frelesing #6
+
+* [Øvingsoppgave](oving6.md)
+* HashiCorp Vault
+*

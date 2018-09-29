@@ -1,22 +1,44 @@
 Vi er nå blitt kjent med Heroku- Målet er å få en "Hello world" spring booot applikasjon opp å kjøre
 på platformen, og få automatisk deployment, hver gang vi pusher endringer til master branch i GIT.
 
-_*[Dere kan bruke Repository](https://github.com/PGR301-2018/heroku_example) som utgangspunkt. Dere kan gjøre git clone, kopiere filene til egen katalog, og fjerne .git katalogen.
+Vi har også sett at det er fornuftig å skille Infrastruktur-dokumenter fra kildekode, så vi skal lage et eget
+repository for concourse pipeline ogspå
 
-* Dere skal lage et eget *privat* GitHub repository og sjekke inn disse filene der. Dere må erstatte verdier i pipeline.yml filen, som er laget for dette eksempel repoet.
+Dere kan bruke følgende Repositories som utgangspunkt
 
-# Hemmeligheter Concourse trenger
+* [Infrastruktur og pipeline - https://github.com/PGR301-2018/heroku_example](https://github.com/PGR301-2018/heroku_example)  
+* [Spring boot hello world - https://github.com/PGR301-2018/heroku_example-app](https://github.com/PGR301-2018/heroku_example-app)
+
+TIPS:
+
+* Klone disse, og ta bort .git katalogen
+* Lag nye Repositories i egen organisasjon, gjerne ved hjelp av terrafomr og Concourse fra sist øving
+* Kopi
+
+ NB! Dere må erstatte verdier i pipeline.yml filen, som er laget for dette eksemple. De nødvendige endringene er kommentert i
+ filen.
+
+# Lag en Heroku app
+
+Dere skal ha installert Heroku CLI, hvis ikke gjør det
+
+```
+heroku create some-app-name-that-you-like
+```
+
+# Til info: Hemmeligheter Concourse trenger
 
 ## Github token & Nøkkelpar
 
-For å sjekking om ny versjon av kode er tilgjengelig, og for å gjøre andre API kall. Trenger Concourse "Resource" med navn "git" et token. Lag et Personal Access Token, og ha dette klart.
-For å pushe kode (terraform state) til dit eget repo, må du lage en [deploy key med write access](https://developer.github.com/v3/guides/managing-deploy-keys/)
+* For å sjekking om ny versjon av kode er tilgjengelig, og for å gjøre andre API kall trenger Concourse et API token. Lag et Personal Access Token, og ha dette klart.
+
+* For å pushe kode (terraform state) til dit eget repo, må du lage en [deploy key med write access](https://developer.github.com/v3/guides/managing-deploy-keys/)
 
 ## Heroku API Key
 
-Heroku API Key kan lett finnes under account settings / i Heroku
+Heroku API Key kan lett finnes under account settings / i Heroku. Denne er nødendig for å autentisere mot Heroku API + Git
 
-## Credentials.yml
+# Lag en Credentials.yml
 
 Kopier disse hemmelighetene inn i en credentials.yml fil
 
@@ -53,7 +75,17 @@ zblEIppkjFxJcc0srC65PSDpCvKa6UrOOik3Bt4u4Rh1NYZ4u/+Rvg==
 -----END RSA PRIVATE KEY-----
 
 heroku_email=glenn.bech@gmail.com
-heroku_api_token=1fceedcc-5a37-4781-9416-8c4ddf61f59b
+heroku_api_token=1fceedcc-5a37-1234-9416-8c4ddf61f59b
 
+# Kjør pipeline
+
+Følgende kommando vil lage en concourse pipeline. Når pipeline kjører så vil
+concourse automatisk publisere det som ligger i Master branchen din, til heroku
+applikasjonen
 
 ```
+fly -t pgr301 sp  -p heroku-example -c concourse/pipeline.yml -l credentials.yml
+``
+* -p er pipeline navnet som dukker opp i menyen i concourseci
+* -l er variabler
+* -c er lenke til pipeline.yml
