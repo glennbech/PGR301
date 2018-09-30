@@ -24,7 +24,7 @@ TIPS:
 
 # Lag en Heroku app
 
-Dere skal ha installert Heroku CLI, hvis ikke gjør det
+Dere skal ha installert Heroku CLI, [hvis ikke gjør det](https://devcenter.heroku.com/articles/heroku-cli)
 
 ```
 heroku create some-app-name-that-you-like
@@ -36,13 +36,13 @@ heroku create some-app-name-that-you-like
 
 * For å sjekking om ny versjon av kode er tilgjengelig, og for å gjøre andre API kall trenger Concourse et API token. Lag et Personal Access Token, og ha dette klart.
 
-* For å pushe kode (terraform state) til dit eget repo, må du lage en [deploy key med write access](https://developer.github.com/v3/guides/managing-deploy-keys/)
+ * For å pushe kode, og for å bruke SSH autentisering til dit eget repo, må du lage en [deploy key med write access](https://developer.github.com/v3/guides/managing-deploy-keys/) 
 
 ## Heroku API Key
 
 Heroku API Key kan lett finnes under account settings / i Heroku. Denne er nødendig for å autentisere mot Heroku API + Git
 
-# Lag en Credentials.yml
+# Lag en credentials.yml
 
 Kopier disse hemmelighetene inn i en credentials.yml fil
 
