@@ -89,7 +89,7 @@ applikasjonen
 
 ```
 fly -t pgr301 sp  -p heroku-example -c concourse/pipeline.yml -l credentials.yml
-``
+```
 * -p er pipeline navnet som dukker opp i menyen i concourseci
 * -l er variabler
 * -c er lenke til pipeline.yml
