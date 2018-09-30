@@ -1,10 +1,14 @@
 Vi er nå blitt kjent med Heroku- Målet er å få en "Hello world" spring booot applikasjon opp å kjøre
-på platformen, og få automatisk deployment, hver gang vi pusher endringer til master branch i GIT.
+på platformen som har automatisk deployment, hver gang vi pusher endringer til master branch i GIT. Automatisk deployment skal skje via Concourse.
+
+NB.
+
+Vi skal "Jukse litt" i dag og opprette Heroku app fra kommando-linje, senere skal vi se på å opprette all infrastruktur med Terraform.
 
 Vi har også sett at det er fornuftig å skille Infrastruktur-dokumenter fra kildekode, så vi skal lage et eget
 repository for concourse pipeline ogspå
 
-Dere kan bruke følgende Repositories som utgangspunkt
+Dere kan bruke følgende repositories som utgangspunkt
 
 * [Infrastruktur og pipeline - https://github.com/PGR301-2018/heroku_example](https://github.com/PGR301-2018/heroku_example)  
 * [Spring boot hello world - https://github.com/PGR301-2018/heroku_example-app](https://github.com/PGR301-2018/heroku_example-app)
