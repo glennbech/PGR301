@@ -34,8 +34,8 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * [The Twelve Factor App](https://12factor.net/)
 * [Øvingsoppgave](oving5.md)
 
-## Frelesing #6
+## Forelesing #6
 
 * [Øvingsoppgave](oving6.md)
-* HashiCorp Vault
-* [Release engeneering at Facebook](https://www.youtube.com/watch?v=2VZ6xucuiN4)
+* [HashiCorp Vault](https://www.vaultproject.io/)
+* [Contiunous deploymetn](https://continuousdelivery.com/implementing/patterns/)
