@@ -38,4 +38,4 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 
 * [Øvingsoppgave](oving6.md)
 * HashiCorp Vault
-*
+* [Release engeneering at Facebook](https://www.youtube.com/watch?v=2VZ6xucuiN4)
