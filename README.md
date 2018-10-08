@@ -39,3 +39,7 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 * [Øvingsoppgave](oving6.md)
 * [HashiCorp Vault](https://www.vaultproject.io/)
 * [Contiunous deploymetn](https://continuousdelivery.com/implementing/patterns/)
+
+## Forelesing #7
+
+* [Øvingsoppgave](oving7.md)
