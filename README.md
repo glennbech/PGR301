@@ -43,3 +43,9 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 ## Forelesing #7
 
 * [Øvingsoppgave](oving7.md)
+
+## Forelesing #8
+
+* [Øvingsoppgave](oving8.md)
+
+
