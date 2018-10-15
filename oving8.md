@@ -2,6 +2,10 @@
 
 I denne oppgaven skal vi bli bedre kjent med Environment Parity. Vi skal også lage databaser, og la terraform kjøre infrastrukturkode vår - målet med dagens øving er å gjøre seg kjent med denne applikasjonen og få den til å virke i eget miljø. 
 
+## Docker-compose for docker 
+
+https://gist.github.com/glennbech/267519c4b8aa9840352155b363777684
+
 ## Miljøvariable
 
 Sett som vanlig følgende miljøvariabler 
