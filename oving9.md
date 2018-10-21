@@ -1,10 +1,51 @@
-# Øving 9. Docker, Google Cloud Platform og Terraform  
+# Øving 9: Docker 
 
 I denne øvingen skal vi se mer på Docker - som er blitt en veldig viktig teknologi i "DevOps" Sfæren . Vi sklal lage egne Docker "Images" og kjøre de.
 
-Målet er å pakke en enkel Spring Boot applikasjon (REST API) inn i en Docker Container og få kjørt den. Vi skal også komme i gang med Google Cloud Platform (GCP) - og bruke tjenesten _Cloud Build_ og _Container registry_ til å holde Docker Containerene våre
+Målet er å pakke en enkel Spring Boot applikasjon (REST API) inn i en Docker Container og få kjørt den. Vi skal også komme i gang med Google Cloud Platform (GCP) - og bruke tjenesten _Cloud Build_ og _Container registry_ til å holde Docker Contaionerene våre - 
+
+I senere øvinger skal vi kjøre Spring Boot applikasjonen vår på Google Cloud Platform - og integrere en pipeline med Concourse
+
+## Nødvendige kunnskaper og nyttige lenker
+
+* Hvordan lage en fork av et repository ; https://help.github.com/articles/fork-a-repo/
+
+# Lag en fork av koden fra Øving 7 og øving 8
+
+https://github.com/PGR301-2018/heroku-pipeline-app
+
+Målet med denne oppgaven er å kjøre Spring boot applikasjonen fra disse oppgavene i Docker
+
+* Kjør ```mvn install```
+* Bygg en Docker Container av applikasjonen ved å lage en fil som heter Dockerfile i rotkatalogen til _heroku-pipeline-app_ som ser slik ut ; 
+
+```
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ARG JAR_FILE
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+```
+
+* Bygg en container ved å kjøre
+
+Starte en kommandolinje og stå i _heroku-pipeline-app_
+
+```
+docker build --build-arg JAR_FILE=target/herokupipe-example-0.0.1-SNAPSHOT.jar
+```
+
+* Sjekk at du kan starte containeren din med
+
+```
+docker run -e JDBC_DATABASE_URL=jdbc:h2:mem:test -d -p 8000:8080 90538717c2b7
+```
+
+
+$ Google Cloud Platform 
 
 Lag en fork av https://github.com/PGR301-2018/gcloud-start  og en klone av din egen fork som et utgangspunkt
+
 
 ## "Sign up" for GCP
 
@@ -20,20 +61,36 @@ Vi gjør alltid ting fra kommando-linje i "DevOps" verdenen!
 
 ## Følg Google Quick Guide
 
-Kjør følgende tuturoial for å komme i gang med 
+Kjør følgende tuturoial for å komme i gang med Docker på GCP - Dette vil gjøre deg istand til å gjøre det samme som ble demonstrert av foreleser. 
 
 https://cloud.google.com/cloud-build/docs/quickstart-docker
 
-## Verifiser at vi kan administrere GCP med terraform 
+# Terraform 
 
 Først må vi lage nøkler som vil gi Terrafrom (eller hvem- som helst- som innehar nøklene) å aksessere vår konto. Følg oppskriften - https://cloud.google.com/iam/docs/creating-managing-service-account-keys
 
-Last ned nøkler JSON fil og legg den i terraform katalogen 
+Service Account må ha rolle "editor"
 
-kjør terraform apply!
+Last ned nøkler JSON fil og legg den i terraform katalogen. Kall filen application.json
 
-## Deep dive på terraform + Google cloud 
+* kjør terraform apply
+* se at det er blitt opprettet en VM i GCP Dashboard
+* kjør terraform destroy
+* se at VM som ble opprettet er borte 
+
+## Deep dive på terraform + Google cloud. 
+
+Etter å ha kjørt denne tutorialen her - vil dere kunne starte en Webserver på Google Cloud Plaform - og ha SSH tilgang til serveren fra lokal maskin. 
+
+Tutorialen viser blant annet 
+
+* Terraform output - slik at du får tak i IP til server som blir startet
+* Hvordan du kan gi terraform filer fra ditt lokale filsystem (SSH keys i dette tilfelle her)
 
 https://cloud.google.com/community/tutorials/getting-started-on-gcp-with-terraform
+
+## ressurser
+
+* https://spring.io/guides/gs/spring-boot-docker/
 
 
