@@ -42,7 +42,7 @@ docker build --build-arg JAR_FILE=target/herokupipe-example-0.0.1-SNAPSHOT.jar
 docker run -e JDBC_DATABASE_URL=jdbc:h2:mem:test -d -p 8000:8080 90538717c2b7
 ```
 
-* JB Applikasjonen blir tilgengelig på port 8000
+* Applikasjonen blir tilgengelig på port 8000
 
 # Google Cloud Platform 
 
