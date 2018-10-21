@@ -81,14 +81,14 @@ Last ned nøkler JSON fil og legg den i _heroku-pipeline-app_/terraform/ katalog
 
 ## Deep dive på terraform + Google cloud. 
 
-Etter å ha kjørt denne tutorialen her - vil dere kunne starte en Webserver på Google Cloud Plaform - og ha SSH tilgang til serveren fra lokal maskin. 
+Følg tutorialen her - https://cloud.google.com/community/tutorials/getting-started-on-gcp-with-terraform  
 
-Tutorialen viser blant annet 
+NB! dere har gjort omtrent halve tutorialen i steget over. Fortsett fra avsnittet *Running a server on Google Cloud Platform*
+
+Noen viktige læringspunkter i tutorialen er
 
 * Terraform output - slik at du får tak i IP til server som blir startet
 * Hvordan du kan gi terraform filer fra ditt lokale filsystem (SSH keys i dette tilfelle her)
-
-https://cloud.google.com/community/tutorials/getting-started-on-gcp-with-terraform
 
 ## ressurser
 
