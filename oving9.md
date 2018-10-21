@@ -1,4 +1,4 @@
-# Øving 9: Docker 
+# Øving 9: Docker, Google Cloud, Terraform. 
 
 I denne øvingen skal vi se mer på Docker - som er blitt en veldig viktig teknologi i "DevOps" Sfæren . Vi sklal lage egne Docker "Images" og kjøre de.
 
@@ -6,18 +6,18 @@ Målet er å pakke en enkel Spring Boot applikasjon (REST API) inn i en Docker C
 
 I senere øvinger skal vi kjøre Spring Boot applikasjonen vår på Google Cloud Platform - og integrere en pipeline med Concourse
 
-## Nødvendige kunnskaper og nyttige lenker
+### Nødvendige kunnskaper og nyttige lenker
 
 * Hvordan lage en fork av et repository ; https://help.github.com/articles/fork-a-repo/
 
-# Lag en fork av koden fra Øving 7 og øving 8
+## Docker 
 
-https://github.com/PGR301-2018/heroku-pipeline-app
+Lag en fork av koden fra Øving 7 og øving 8 - https://github.com/PGR301-2018/heroku-pipeline-app
 
-Målet med denne oppgaven er å kjøre Spring boot applikasjonen fra disse oppgavene i Docker
+Målet med denne oppgaven er å lage en Docker Container som kjører Spring boot applikasjonen.
 
-* Kjør ```mvn install```
-* Bygg en Docker Container av applikasjonen ved å lage en fil som heter Dockerfile i rotkatalogen til _heroku-pipeline-app_ som ser slik ut ; 
+* Kjør ```mvn install``` slik at vi får bygget jar filer under target katalogen
+* Bygg en Docker Container av applikasjonen ved å lage en fil som heter _Dockerfile_ i rotkatalogen til _heroku-pipeline-app_ som ser slik ut ; 
 
 ```
 FROM openjdk:8-jdk-alpine
@@ -27,9 +27,10 @@ COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 
-* Bygg en container ved å kjøre
+* Bygg en container 
 
 Starte en kommandolinje og stå i _heroku-pipeline-app_
+Kjør kommandoen 
 
 ```
 docker build --build-arg JAR_FILE=target/herokupipe-example-0.0.1-SNAPSHOT.jar
@@ -41,11 +42,11 @@ docker build --build-arg JAR_FILE=target/herokupipe-example-0.0.1-SNAPSHOT.jar
 docker run -e JDBC_DATABASE_URL=jdbc:h2:mem:test -d -p 8000:8080 90538717c2b7
 ```
 
+* JB Applikasjonen blir tilgengelig på port 8000
 
-$ Google Cloud Platform 
+# Google Cloud Platform 
 
 Lag en fork av https://github.com/PGR301-2018/gcloud-start  og en klone av din egen fork som et utgangspunkt
-
 
 ## "Sign up" for GCP
 
