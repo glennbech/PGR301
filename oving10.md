@@ -14,6 +14,8 @@ Lag deploy keys for disse. Putt private key i credentials.yaml, og public i repi
 kan dere bruke litt tid på lese dere opp på Deploy keys her ; https://developer.github.com/v3/guides/managing-deploy-keys/
 )
 
+Deploy key for Infra må ha write access
+
 Du må endre litt på pipeline.yaml etter du har laget egen fork. Sjekk under "resources" og bytt ut source/uri for både infra- og app repo 
  
 ## Lag en bruker på statuscake
