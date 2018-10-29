@@ -13,6 +13,8 @@ vår fra skyen.
 Lag deploy keys for disse. Putt private key i credentials.yaml, og public i repisotoriet sit "settings"  (Hvis noe er uklart, 
 kan dere bruke litt tid på lese dere opp på Deploy keys her ; https://developer.github.com/v3/guides/managing-deploy-keys/
 )
+
+Du må endre litt på pipeline.yaml etter du har laget egen fork. Sjekk under "resources" og bytt ut source/uri for både infra- og app repo 
  
 ## Lag en bruker på statuscake
 
@@ -21,6 +23,8 @@ Registrer deg på Statucake og finn API key ved å klikke på profil- ikonet, og
 
 Modifiser statuscake.tf i https://github.com/PGR301-2018/monitoring-infra - med ditt username *NB!!!* "Username" som skal inn her er ikke e-post adressem din. 
 Brukernavnet står på profilsiden din og er din epost uten spesialtegn som . og @ 
+
+Bruk gjerne litt tid til å bli kjent med tjenesten. Man kan legge på varsling på eksisterende tjenester som feks VG.no eller noe annet moro. 
 
 
 ## Lag credentials.yaml
