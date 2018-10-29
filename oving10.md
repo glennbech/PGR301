@@ -26,7 +26,6 @@ Brukernavnet står på profilsiden din og er din epost uten spesialtegn som . og
 
 Bruk gjerne litt tid til å bli kjent med tjenesten. Man kan legge på varsling på eksisterende tjenester som feks VG.no eller noe annet moro. 
 
-
 ## Lag credentials.yaml
 
 Husk at hemmeligheter ikke skal inn i terraform kode!! Det ligger en eksempel credentials.yaml i *monitoring-infra* 
@@ -41,5 +40,10 @@ Stå i monitoring-infra/
 ```
 fly -t pgr301 sp -c concourse/pipeline.yml -p monitoring -l credentials.yaml
 ```
+
+Denne pipelinen har ingen automatisk triggering. Du må kjøre 'infra' jobben for å få opprettet Heroku pipeline og overvåkningen. Det samme gjelder applikasjonen, for å få pushet den opp på heroku. 
+
+
+
 
 ## 
