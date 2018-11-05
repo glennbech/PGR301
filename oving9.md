@@ -40,6 +40,9 @@ docker build --build-arg JAR_FILE=target/herokupipe-example-0.0.1-SNAPSHOT.jar .
 
 ```
 docker run -e JDBC_DATABASE_URL=jdbc:h2:mem:test -d -p 8000:8080 <container id- output fra build>
+
+The command looks something like this: 
+docker run -e JDBC_DATABASE_URL=jdbc:h2:mem:test -d -p 8000:8080 12sgggj3h121212
 ```
 
 * Applikasjonen blir tilgengelig på port 8000
