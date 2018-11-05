@@ -59,6 +59,7 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 ## Forelesing #11
 
 * [Øvingsoppgave](oving11.md)
+* https://rubygarage.org/blog/iaas-vs-paas-vs-saas
 
 ## Forelesing #12
 
