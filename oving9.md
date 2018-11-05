@@ -33,7 +33,7 @@ Starte en kommandolinje og stå i _heroku-pipeline-app_
 Kjør kommandoen 
 
 ```
-docker build --build-arg JAR_FILE=target/herokupipe-example-0.0.1-SNAPSHOT.jar
+docker build --build-arg JAR_FILE=target/herokupipe-example-0.0.1-SNAPSHOT.jar .
 ```
 
 * Sjekk at du kan starte containeren din med
