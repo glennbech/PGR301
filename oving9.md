@@ -30,7 +30,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 * Bygg en container 
 
 Starte en kommandolinje og stå i _heroku-pipeline-app_
-Kjør kommandoen 
+Kjør kommandoen (OBS! Legg merke til siste punktum)
 
 ```
 docker build --build-arg JAR_FILE=target/herokupipe-example-0.0.1-SNAPSHOT.jar .
