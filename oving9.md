@@ -75,7 +75,7 @@ Først må vi lage nøkler som vil gi Terrafrom (eller hvem- som helst- som inne
 
 Service Account må ha rolle "editor"
 
-Last ned nøkler JSON fil og legg den i _heroku-pipeline-app_/terraform/ katalogen. Kall filen application.json
+Last ned nøkler JSON fil og legg den i _heroku-pipeline-app_/terraform/ katalogen. Kall filen account.json
 
 * kjør terraform apply
 * se at det er blitt opprettet en VM i GCP Dashboard
