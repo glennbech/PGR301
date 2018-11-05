@@ -59,3 +59,7 @@ Velkommen til PGR301. Her kommer informasjon relatert til øvingsoppgaver som ko
 ## Forelesing #11
 
 * [Øvingsoppgave](oving11.md)
+
+## Forelesing #12
+
+* [Øvingsoppgave](oving12.md)
